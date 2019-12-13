@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Rambla" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
-
 <body>
    <section class="wrapper">
     <header>
@@ -23,45 +22,45 @@
     </header>
 <section id="contenedor">
 <section  class="problema">
-  <h2> Problema: ¿Cúal es la presion ejercida por una fuerza de 120N que actua sobre una superficie de 0.040 metros </h2>
+  <h2>Problema: Cálcular la densidad de la Tierra</h2>
   <p>Descripción:</p>
-  <p> La presion ejercida por una fuerza de 120N que actua sobre una superficie de 0.040 metros <br>
-
-</p>
+  <p>El radio de la Tierra es 6 378 km y su masa es 5.97E24 kg. <br>
+a) ¿Cuál es la densidad promedio de la Tierra?<br>
+b) Si el radio de la Tierra se redujera a una tercera parte y su masa no cambiará, cuál serı́a su densidad?<br>
+c) Si el radio de la Tierra y su masa se redujera a una
+tercera parte, ¿su densidad serı́a la misma? ¿por qué?</p>
 </section>
 <section class="formulas">
 <h2>Fórmulas</h2>
-Presion=Fuerza/Area
+    Densidad = Masa/Volumen<br>
+    Volumen=(4/3)pi*r*r*r
 </section>
 <section class="datos">
 <h2>Datos:</h2>
-               Fuerza: 120N <br>
-               Area: 0.40m al cuadrado
+   m= 5.97E24 Kg. <br>
+   r= 6378 Km.
 </section>
 <section class="calculos">
 <h2>Solución</h2>
-   <p>La potencia es:<br>
-                     P=120/0.40</p>
+   <p>a)La densidad de la Tierra es:<br>
+    densidad = 5.97E24 Kg/volumen (m) <br>
+    volumen= (4/3)pi(6378000)(6378000)(6378000)</p>
 </section>
-
-
 <?php
-     function calcula_resultado(){
-        $Fuerza=1200;
-        $Area= 0.500;
-
-        
-        $Potencia= $Fuerza/$Area;
-        return $Potencia;
+     function calcula_densidad(){
+        $PI=3.141592;
+        $masa= 5.97E24;
+        $radio= 6378e3;
+        $volumen= (4/3)$PI$radio*$radio*$radio;
+        $densidad= $masa/$volumen;
+        return $densidad;
      }
 ?>
-
-
 <section class="resultado">
 <h2>Resultado:</h2>
 <div id="resultadoA"></div>
 <?php
- print "<h1> La potencia es = ".calcula_resultado(). " N/(metro cubico)</h1>";
+ print "<h1> resultado: densidad = ".calcula_densidad(). " kg/(metro cubico)</h1>";
 ?>
 </section>
 </section>
