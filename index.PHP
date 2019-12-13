@@ -44,10 +44,11 @@ Presion=Fuerza/Area
                      P=120/0.40</p>
 </section>
 
+
 <?php
      function calcula_resultado(){
         $Fuerza=1200;
-        $Area= 0.400;
+        $Area= 0.500;
 
         
         $Potencia= $Fuerza/$Area;
@@ -60,7 +61,7 @@ Presion=Fuerza/Area
 <h2>Resultado:</h2>
 <div id="resultadoA"></div>
 <?php
- print "<h1> La potencia es = ".calcula_ resultado(). " N/(metro cubico)</h1>";
+ print "<h1> La potencia es = ".calcula_resultado(). " N/(metro cubico)</h1>";
 ?>
 </section>
 </section>
