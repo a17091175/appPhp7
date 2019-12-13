@@ -59,8 +59,12 @@
 <section id="resultado">
           <center><h2>Solución</h2></center>
 
+
         <div class=solution id="resultado1">
           <?php 
+$fuerza = 120;
+$area =0.04;
+
           $presion = $fuerza/ $area;
 
 print "densidad =".$presion;
@@ -77,6 +81,9 @@ print "densidad =".$presion;
     </footer>
 </body>
 </html>
+
+
+
 
 
 
